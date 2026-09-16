@@ -4,7 +4,9 @@ while n<=0:
     if n<=0:
         print("Error el numero debe ser mayor a 0")
 a,b=0,1
-resultao=[]
+resultado=[]
 for _ in range(n):
-    resultao.append(str(a))
-    print(f"{a},{b}={b},{a}+{b}")
+    resultado.append(str(a))
+    a,b=b,a+b
+print("Los primero",n,"terminos son:")
+print("-".join(resultado))
